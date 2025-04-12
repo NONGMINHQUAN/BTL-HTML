@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Góp Ý</title>
+  <link rel="stylesheet" href="gop_y.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Đăng ký thành viên</h2>
+    <form>
+      <table>
+        <tr><th colspan="2">Thông tin Tài khoản</th></tr>
+        <tr>
+          <td>Tài khoản:</td>
+          <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+          <td>Mật khẩu:</td>
+          <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+          <td>Xác nhận Mật khẩu:</td>
+          <td><input type="password" name="confirm_password"></td>
+        </tr>
+
+        <tr><th colspan="2">Thông tin Liên hệ</th></tr>
+        <tr>
+          <td>Họ và tên:</td>
+          <td><input type="text" name="fullname"></td>
+        </tr>
+        <tr>
+          <td>Ngày sinh:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td>Điện thoại:</td>
+          <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email"></td>
+        </tr>
+
+        <tr><th colspan="2">Thông tin Giao hàng</th></tr>
+        <tr>
+          <td>Họ và tên:</td>
+          <td><input type="text" name="shipping_name"></td>
+        </tr>
+        <tr>
+          <td>Địa chỉ:</td>
+          <td><input type="text" name="address"></td>
+        </tr>
+        <tr>
+          <td>Tỉnh/Thành phố:</td>
+          <td>
+            <select name="city">
+              <option>Hà Nội</option>
+              <option>TP. Hồ Chí Minh</option>
+              <option>Đà Nẵng</option>
+              <option>Khác</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Mã xác nhận:</td>
+          <td>
+            <input type="text" name="captcha">
+            <span class="captcha">4120</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="submit" class="btn-submit">ĐĂNG KÝ</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
